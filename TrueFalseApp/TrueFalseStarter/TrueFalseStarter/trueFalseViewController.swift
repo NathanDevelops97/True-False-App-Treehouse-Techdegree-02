@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  trueFalseViewController.swift
 //  TrueFalseStarter
 //
-//  Created by Pasan Premaratne on 3/9/16.
+//  Created by Nathanael Grant on 9/4/16.
 //  Copyright © 2016 Treehouse. All rights reserved.
 //
 
@@ -10,7 +10,8 @@ import UIKit
 import GameKit
 import AudioToolbox
 
-class ViewController: UIViewController {
+class trueFalseViewController: UIViewController {
+
     
     let questionsPerRound = 4
     var questionsAsked = 0
@@ -19,19 +20,14 @@ class ViewController: UIViewController {
     
     var gameSound: SystemSoundID = 0
     
-    let trivia: [[String : String]] = [
-        ["Question": "Only female koalas can whistle", "Answer": "False"],
-        ["Question": "Blue whales are technically whales", "Answer": "True"],
-        ["Question": "Camels are cannibalistic", "Answer": "False"],
-        ["Question": "All ducks are birds", "Answer": "True"]
-    ]
-    
+       
     @IBOutlet weak var questionField: UILabel!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     @IBOutlet weak var playAgainButton: UIButton!
     
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadGameStartSound()
@@ -45,9 +41,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     func displayQuestion() {
-        indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextIntWithUpperBound(trivia.count)
-        let questionDictionary = trivia[indexOfSelectedQuestion]
+        indexOfSelectedQuestion = GKRandomSource.sharedRandom().nextIntWithUpperBound(questions.trivia.count)
+        let questionDictionary = questions.trivia[indexOfSelectedQuestion]
         questionField.text = questionDictionary["Question"]
         playAgainButton.hidden = true
     }
@@ -68,7 +65,7 @@ class ViewController: UIViewController {
         // Increment the questions asked counter
         questionsAsked += 1
         
-        let selectedQuestionDict = trivia[indexOfSelectedQuestion]
+        let selectedQuestionDict = questions.trivia[indexOfSelectedQuestion]
         let correctAnswer = selectedQuestionDict["Answer"]
         
         if (sender === trueButton &&  correctAnswer == "True") || (sender === falseButton && correctAnswer == "False") {
@@ -101,7 +98,7 @@ class ViewController: UIViewController {
         nextRound()
     }
     
-
+    
     
     // MARK: Helper Methods
     
@@ -126,5 +123,34 @@ class ViewController: UIViewController {
     func playGameStartSound() {
         AudioServicesPlaySystemSound(gameSound)
     }
-}
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
