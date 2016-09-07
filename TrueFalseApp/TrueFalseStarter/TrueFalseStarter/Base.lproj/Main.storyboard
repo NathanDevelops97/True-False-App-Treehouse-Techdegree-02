@@ -22,7 +22,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="4O7-3a-ERY"/>
-                                    <constraint firstAttribute="height" constant="50" id="YHX-LP-JxC"/>
+                                    <constraint firstAttribute="height" constant="50" id="YHX-LP-JxC">
+                                        <variation key="heightClass=compact" constant="46"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,27 +36,14 @@
                                     <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfk-Z2-crr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K17-uy-MvB">
-                                <rect key="frame" x="150" y="496" width="300" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.57647058823529407" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7yQ-qr-cXY"/>
-                                    <constraint firstAttribute="width" constant="300" id="Kjh-r9-YBq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Play Again">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAgain" destination="BYZ-38-t0r" eventType="touchUpInside" id="klz-B2-JAN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-KG-OQO">
                                 <rect key="frame" x="150" y="232" width="300" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="H4D-jS-0Fr"/>
+                                    <constraint firstAttribute="height" constant="50" id="H4D-jS-0Fr">
+                                        <variation key="heightClass=compact" constant="46"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" constant="300" id="rvk-vY-OW3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
@@ -69,7 +59,10 @@
                                 <rect key="frame" x="150" y="144" width="300" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Bgx-ew-rmO"/>
+                                    <constraint firstAttribute="height" constant="50" id="Bgx-ew-rmO">
+                                        <variation key="heightClass=compact" constant="46"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" constant="300" id="eMD-3r-a9t"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
@@ -81,12 +74,34 @@
                                     <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1M8-gL-gpa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K17-uy-MvB">
+                                <rect key="frame" x="150" y="496" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.57647058823529407" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7yQ-qr-cXY">
+                                        <variation key="heightClass=compact" constant="46"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="300" id="Kjh-r9-YBq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain" destination="BYZ-38-t0r" eventType="touchUpInside" id="klz-B2-JAN"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1V-MS-ECi">
                                 <rect key="frame" x="150" y="320" width="300" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="G4K-zp-oSw"/>
-                                    <constraint firstAttribute="height" constant="50" id="Mud-to-Rg5"/>
+                                    <constraint firstAttribute="height" constant="50" id="Mud-to-Rg5">
+                                        <variation key="heightClass=compact" constant="46"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,7 +115,10 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3V-ih-1Ky">
                                 <rect key="frame" x="148" y="71" width="304" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="tEQ-HU-XCf"/>
+                                    <constraint firstAttribute="width" constant="304" id="tEQ-HU-XCf">
+                                        <variation key="heightClass=compact" constant="432"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="512"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -109,20 +127,46 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20784313725490194" green="0.73333333333333328" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="J1V-MS-ECi" firstAttribute="top" secondItem="I3V-ih-1Ky" secondAttribute="bottom" constant="199" id="0rv-M9-PM2"/>
-                            <constraint firstItem="G04-Z5-qJw" firstAttribute="top" secondItem="I3V-ih-1Ky" secondAttribute="bottom" constant="23" id="1K2-4W-WJI"/>
+                            <constraint firstItem="J1V-MS-ECi" firstAttribute="top" secondItem="I3V-ih-1Ky" secondAttribute="bottom" constant="199" id="0rv-M9-PM2">
+                                <variation key="heightClass=compact" constant="140"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="141"/>
+                            </constraint>
+                            <constraint firstItem="G04-Z5-qJw" firstAttribute="top" secondItem="I3V-ih-1Ky" secondAttribute="bottom" constant="23" id="1K2-4W-WJI">
+                                <variation key="heightClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="13"/>
+                            </constraint>
                             <constraint firstItem="G04-Z5-qJw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3qb-VT-fC9"/>
                             <constraint firstItem="AS4-HX-g9f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7r0-fT-ift"/>
                             <constraint firstItem="K17-uy-MvB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8fZ-n6-IoH"/>
-                            <constraint firstItem="AS4-HX-g9f" firstAttribute="top" secondItem="J1V-MS-ECi" secondAttribute="bottom" constant="38" id="WHf-8u-kYz"/>
-                            <constraint firstItem="J1V-MS-ECi" firstAttribute="top" secondItem="4mE-KG-OQO" secondAttribute="bottom" constant="38" id="XJh-6m-eLX"/>
-                            <constraint firstItem="4mE-KG-OQO" firstAttribute="top" secondItem="G04-Z5-qJw" secondAttribute="bottom" constant="38" id="ZXd-d2-LGf"/>
+                            <constraint firstItem="AS4-HX-g9f" firstAttribute="top" secondItem="J1V-MS-ECi" secondAttribute="bottom" constant="38" id="WHf-8u-kYz">
+                                <variation key="heightClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="24"/>
+                            </constraint>
+                            <constraint firstItem="J1V-MS-ECi" firstAttribute="top" secondItem="4mE-KG-OQO" secondAttribute="bottom" constant="38" id="XJh-6m-eLX">
+                                <variation key="heightClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="24"/>
+                            </constraint>
+                            <constraint firstItem="4mE-KG-OQO" firstAttribute="top" secondItem="G04-Z5-qJw" secondAttribute="bottom" constant="38" id="ZXd-d2-LGf">
+                                <variation key="heightClass=compact" constant="16"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="24"/>
+                            </constraint>
                             <constraint firstItem="4mE-KG-OQO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dTb-zc-dDw"/>
                             <constraint firstItem="I3V-ih-1Ky" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ko7-Qr-Ttv"/>
-                            <constraint firstItem="J1V-MS-ECi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t3v-gm-big"/>
-                            <constraint firstItem="K17-uy-MvB" firstAttribute="top" secondItem="AS4-HX-g9f" secondAttribute="bottom" constant="38" id="tnr-ny-Gft"/>
-                            <constraint firstItem="I3V-ih-1Ky" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="x2J-lX-ubV"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K17-uy-MvB" secondAttribute="bottom" constant="54" id="x7g-1u-ggN"/>
+                            <constraint firstItem="J1V-MS-ECi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t3v-gm-big">
+                                <variation key="heightClass=compact" constant="-2"/>
+                            </constraint>
+                            <constraint firstItem="K17-uy-MvB" firstAttribute="top" secondItem="AS4-HX-g9f" secondAttribute="bottom" constant="38" id="tnr-ny-Gft">
+                                <variation key="heightClass=compact" constant="15"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="24"/>
+                            </constraint>
+                            <constraint firstItem="I3V-ih-1Ky" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="x2J-lX-ubV">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K17-uy-MvB" secondAttribute="bottom" constant="54" id="x7g-1u-ggN">
+                                <variation key="heightClass=compact" constant="13"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="22"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -137,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="335"/>
+            <point key="canvasLocation" x="378" y="334.5"/>
         </scene>
     </scenes>
 </document>

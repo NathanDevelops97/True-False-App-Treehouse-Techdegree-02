@@ -9,6 +9,7 @@
 import UIKit
 import GameKit
 import AudioToolbox
+import SpriteKit
 
 class trueFalseViewController: UIViewController {
 
@@ -16,6 +17,11 @@ class trueFalseViewController: UIViewController {
     var questionsAsked = 0
     var correctQuestions = 0
     var indexOfSelectedQuestion: Int = 0
+    
+    
+    
+    
+    
     
     var gameSound: SystemSoundID = 0
     var correctSound: SystemSoundID = 0
@@ -42,6 +48,8 @@ class trueFalseViewController: UIViewController {
         // Start game
         playGameStartSound()
         displayQuestion()
+      
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,6 +80,7 @@ class trueFalseViewController: UIViewController {
 
         playAgainButton.hidden = true
         
+      
         
     }
     
@@ -130,15 +139,19 @@ class trueFalseViewController: UIViewController {
         }
         
         loadNextRoundWithDelay(seconds: 2)
+        
     }
     
     func nextRound() {
         if questionsAsked == questionsPerRound {
             // Game is over
             displayScore()
+            
+            
         } else {
             // Continue game
             displayQuestion()
+            
         }
     }
     
@@ -166,7 +179,7 @@ class trueFalseViewController: UIViewController {
         
         // Executes the nextRound method at the dispatch time on the main queue
         dispatch_after(dispatchTime, dispatch_get_main_queue()) {
-            self.nextRound()
+        self.nextRound()
         }
     }
     
