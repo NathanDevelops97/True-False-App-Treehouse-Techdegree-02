@@ -32,15 +32,13 @@ struct Trivia {
         self.correct = correct
         
     }
-    
-    
-    
+
     func getRandomQuestion() -> Trivia {
         
         let randomQuestion = GKRandomSource.sharedRandom().nextIntWithUpperBound(questionsArray.count)
         
         return questionsArray[randomQuestion]
-
+        
         
     }
     
