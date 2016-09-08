@@ -18,11 +18,6 @@ class trueFalseViewController: UIViewController {
     var correctQuestions = 0
     var indexOfSelectedQuestion: Int = 0
     
-    
-    
-    
-    
-    
     var gameSound: SystemSoundID = 0
     var correctSound: SystemSoundID = 0
     var inCorrectSound: SystemSoundID = 0
@@ -110,32 +105,19 @@ class trueFalseViewController: UIViewController {
         if sender.titleLabel!.text == correctAnswer {
             correctQuestions += 1
             questionField.text = "Correct!"
-            playCorrectSound()
+            
+            // Setting backround color to color constants based on if answer is correct
+
             sender.backgroundColor = correctAnswerColor
+            playCorrectSound()
         } else {
             questionField.text = "Sorry, wrong answer!"
+            
+            // Setting backround color to color constants based on if answer is incorrect
+
+            sender.backgroundColor = inCorrectAnswerColor
             playInCorrectSound()
             
-            // Setting backround color to color constants based on if answer is correct/incorrect
-            
-            if option1.titleLabel!.text == correctAnswer {
-                
-                sender.backgroundColor = correctAnswerColor
-           
-            } else if option2.titleLabel!.text == correctAnswer {
-                
-            sender.backgroundColor = inCorrectAnswerColor
-
-            } else if option3.titleLabel!.text == correctAnswer {
-                
-                sender.backgroundColor = inCorrectAnswerColor
-                
-            } else if option4.titleLabel!.text == correctAnswer {
-                
-                sender.backgroundColor = inCorrectAnswerColor
-                
-            }
-        
         }
         
         loadNextRoundWithDelay(seconds: 2)
@@ -146,7 +128,6 @@ class trueFalseViewController: UIViewController {
         if questionsAsked == questionsPerRound {
             // Game is over
             displayScore()
-            
             
         } else {
             // Continue game
